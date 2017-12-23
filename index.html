@@ -1,0 +1,319 @@
+<DOCTYPE! html>
+    <html>
+
+    <head>
+
+        <link href="https://fonts.googleapis.com/css?family=Taviraj|Work+Sans" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            @charset "UTF-8";
+            /* *** page *** */
+
+            html {
+                box-sizing: border-box;
+
+
+                background: #00ffa1;
+                background: -webkit-linear-gradient(left, #00FFA1, #00FFFF);
+                background: -moz-linear-gradient(left, #00FFA1, #00FFFF);
+                background: linear-gradient(left, #00FFA1, #00FFFF);
+
+
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+
+            #wrapper {
+                width: 960px;
+            }
+
+            h1 {
+                color: black;
+                font-family: 'Work Sans', sans-serif;
+                font-size: 100px;
+
+            }
+
+            h2 {
+                color: black;
+                font-family: 'Work Sans', sans-serif;
+                font-size: 15px;
+                margin-left: 20px;
+            }
+
+            p {
+                text-decoration: none;
+                color: black;
+                font-family: 'Work Sans', sans-serif;
+                font-size: 15px;
+                margin: 5px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #333333;
+                font-family: 'Taviraj', serif;
+                font-size: 11px;
+            }
+
+            #box {
+                display: grid;
+                grid-template-columns: repeat(8, 1fr);
+                grid-gap: 10px;
+                height: 300px;
+                width: 960px;
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding: 20px;
+
+            }
+
+            .titlebox {
+                display: block;
+                text-align: center;
+            }
+
+            /* *** navigation *** */
+
+            .leftNav,
+            .rightNav {
+                text-align: right;
+                list-style: none;
+                width: 100%;
+                top: 30%;
+                padding: 0px;
+
+            }
+
+            .button {
+                border: none;
+                padding: 10px 10px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                margin-left: 10px;
+                margin-bottom: 5px;
+                cursor: pointer;
+                width: 200px;
+                text-align: right;
+
+            }
+
+            .button:hover {
+                background-color: rgba(0, 0, 0, 1.0);
+                color: rgba(255, 255, 255, 1);
+            }
+
+            a:hover {
+                color: rgba(255, 0, 0, 0.5);
+            }
+
+            /* NAME */
+
+            .footer {
+
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                margin-bottom: 30px;
+                margin-left: 30px;
+            }
+
+
+
+            /*SLIDER*/
+
+            .slider {
+                width: 405px;
+                height: 405px;
+                margin: auto;
+                position: relative;
+            }
+
+            .slide1,
+            .slide2,
+            .slide3,
+            .slide4,
+            .slide5 {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            .slide1 {
+                background: url(images/image1.png)no-repeat center;
+                background-size: cover;
+                animation: fade 70s infinite;
+                -webkit-animation: fade 70s infinite;
+
+            }
+
+            .slide2 {
+                background: url(images/image2.jpg)no-repeat center;
+                background-size: cover;
+                animation: fade2 70s infinite;
+                -webkit-animation: fade2 70s infinite;
+            }
+
+            .slide3 {
+                background: url(images/image3.jpg)no-repeat center;
+                background-size: cover;
+                animation: fade3 70s infinite;
+                -webkit-animation: fade3 70s infinite;
+            }
+
+            .slide4 {
+                background: url(images/image4.jpg)no-repeat center;
+                background-size: cover;
+                animation: fade3 70s infinite;
+                -webkit-animation: fade3 70s infinite;
+            }
+
+            @keyframes fade {
+                0% {
+                    opacity: 1
+                }
+                33.333% {
+                    opacity: 0
+                }
+                66.666% {
+                    opacity: 0
+                }
+                100% {
+                    opacity: 1
+                }
+            }
+
+            @keyframes fade2 {
+                0% {
+                    opacity: 0
+                }
+                33.333% {
+                    opacity: 1
+                }
+                66.666% {
+                    opacity: 0
+                }
+                100% {
+                    opacity: 0
+                }
+            }
+
+            @keyframes fade3 {
+                0% {
+                    opacity: 0
+                }
+                33.333% {
+                    opacity: 0
+                }
+                66.666% {
+                    opacity: 1
+                }
+                100% {
+                    opacity: 0
+                }
+            }
+
+            @keyframes fade4 {
+                0% {
+                    opacity: 0
+                }
+                33.333% {
+                    opacity: 0
+                }
+                66.666% {
+                    opacity: 1
+                }
+                100% {
+                    opacity: 0
+                }
+            }
+
+            /*
+.mainNav a{
+  display: inline;
+  margin: 5px 0px 5px 0px;
+  height: 20px;
+  vertical-align: middle;
+}
+.mainNav a:hover{
+color: white;
+}
+.search {
+  flex: 1;
+  max-width: 300px;
+  min-width: 60px;
+  margin: 15px 10px 0 0;
+  }
+  .search input{
+    width: 100%;
+  } */
+
+        </style>
+
+    </head>
+
+    <body>
+        <title>
+            tnvi
+        </title>
+        <div id="wrapper">
+            <div id="box">
+                <div class="leftNav">
+                    <p><b>  Interface</b></p>
+                    <ul>
+                        <a href="http://ixd0006.firebird.sheridanc.on.ca/rasoi/" class="button"> Rasoi </a>
+                    </ul>
+                    <ul>
+                        <a href="http://ixd0006.firebird.sheridanc.on.ca/IXDwebsite/" class="button"> Rasoi Greyboxes Greyboxes</a>
+                    </ul>
+
+                    <p><b> Design Fundamentals</b></p>
+                    <ul>
+                        <a href="http://ixd0006.firebird.sheridanc.on.ca/dfund/illustrator.html" class="button"> Illustrator Graphics</a>
+                    </ul>
+                    <ul>
+                        <a href="#" class="button"> Logo Design</a>
+                    </ul>
+                </div>
+                <div class="rightNav">
+                    <p><b>  Digital Tools</b></p>
+                    <ul>
+
+                        <a href="http://ixd0006.firebird.sheridanc.on.ca/wordpress/index.php/tag/project-1/" class="button"> Web Header</a>
+                    </ul>
+                    <ul>
+                        <a href="http://ixd0006.firebird.sheridanc.on.ca/dtools/ottto.html" class="button"> Otto Coffeebar Homepage Mockup</a>
+                        <a href="http://ixd0006.firebird.sheridanc.on.ca/wordpress/index.php/2017/11/22/62/" class="button"> Otto Coffeebar Homepage Mockup Blog Posts</a>
+                    </ul>
+                    <p><b> Conceptual Processes</b></p>
+                    <ul>
+                        <a href="http://ixd0006.firebird.sheridanc.on.ca/conpro/markit.html" class="button"> Mark It</a>
+                    </ul>
+                </div>
+                <div class="imagebox">
+                    <!--  <img src="images/zen.png" /> -->
+                    <div class='slider'>
+                        <div class='slide1'></div>
+                        <div class='slide2'></div>
+                        <div class='slide3'></div>
+                        <div class='slide3'></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer">
+                <h1>Tanvi C.</h1>
+                <h2> hello@tanvichhabra.com <br /> Sheridan Interaction Design 2017-2021 </h2>
+            </div>
+        </div>
+    </body>
+
+    </html>
