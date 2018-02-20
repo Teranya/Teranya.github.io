@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Elder Scrolls Name Generator</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="form" style="margin-top: 20%; max-width: 500px;">
+			<form NAME="myform" id="nameform" action="" method="GET" onsubmit="return false;"> Enter a first name:
+				<br>
+				<input class="input" TYPE="text" NAME="inputbox" id="namebox" VALUE="" placeholder="Enter name or initials with space in between">
+				<br>
+				<br>
+
+
+			</form>
+			<div class="buttonbox">
+				<button class="button" id="generatemale" OnClick=" return namegenMale(nameform)">Generate Male Names</button>
+				<button class="button" id="generatefemale" OnClick=" return namegenFemale(nameform)">Generate Female Names</button>
+			</div>
+		</div>
+		<div class="name">
+			<div class="nametitle">
+				<p>Your Dunmer name is</p>
+			</div>
+			<div id="placeholder">
+				<span id="name1"></span>
+				<span id="name2"></span>
+
+			</div>
+		</div>
+
+	</div>
+	<script src="js/main.js">
+
+
+	</script>
+</body>
+
+</html>
