@@ -1,2 +1,3 @@
 # Teranya.github.io
-This is a repository to host an attempt, please pretend there's nothing here for now.
+
+A github page to host webpages with my ongoing projects at the Interaction Design program at Sheridan College.
