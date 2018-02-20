@@ -1,3 +1,3 @@
 # Teranya.github.io
 
-A github page to host webpages with my ongoing projects at the Interaction Design program at Sheridan College.
+A github page to host my projects created for the Interaction Design program at Sheridan College.
