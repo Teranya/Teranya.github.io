@@ -9,40 +9,65 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Lato" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
-	<div class="wrapper">
-		<div class="form" style="margin-top: 20%; max-width: 500px;">
-			<form NAME="myform" id="nameform" action="" method="GET" onsubmit="return false;"> Enter a first name:
-				<br>
-				<input class="input" TYPE="text" NAME="inputbox" id="namebox" VALUE="" placeholder="Enter name or initials with space in between">
-				<br>
-				<br>
+	<header class="w3-panel w3-center w3-opacity" style="padding:28px 16px">
+		<h1 class="w3-xlarge">Elder Scolls</h1>
+		<h1>Dark Elf Name Generator</h1>
+	</header>
 
+	<div class="w3-container w3-content w3-center " style="max-width:700px" id="description">
 
-			</form>
-			<div class="buttonbox">
-				<button class="button" id="generatemale" OnClick=" return namegenMale(nameform)">Generate Male Names</button>
-				<button class="button" id="generatefemale" OnClick=" return namegenFemale(nameform)">Generate Female Names</button>
-			</div>
-		</div>
-		<div class="name">
-			<div class="nametitle">
-				<p>Your Dunmer name is</p>
-			</div>
-			<div id="placeholder">
-				<span id="name1"></span>
-				<span id="name2"></span>
-
-			</div>
-		</div>
-
+		<p class="w3-justify">This generator will generate tons of different elven names for you Dunmer character. The generator uses lore friendly names used in the all games to create a gender specific first name and a family name. </p>
 	</div>
+	<div class="container w3-content w3-padding-32 w3-center ">
+		<div class="wrapper w3-container w3-margin-bottom">
+
+			<div class="form  w3-center w3-padding">
+				<form NAME="myform" id="nameform" action="" method="GET" onsubmit="return false;"> Enter a first name and a last name or initials seperated by a space:
+					<br>
+					<input class="input" TYPE="text" NAME="inputbox" id="namebox" VALUE="" placeholder="Enter name or initials with space in between">
+					<br>
+					<br>
+
+
+				</form>
+				<div class="buttonbox">
+
+					<label for="male">Male Names</label > <input type="radio" id="male" name="tab" onclick="show1();" style="margin-right: 20px;"/>
+					<label for="female">Female Names</label><input type="radio" id="female" name="tab" onclick="show2();" /> <button id="buttondummy" class="button" OnClick=" return namegenMale(nameform)">Generate</button>
+					<button id="buttonmale" class="button hide" id="generatemale" OnClick=" return namegenMale(nameform)">Generate a Male Name</button>
+					<button id="buttonfemale" class="button hide " id="generatefemale" OnClick=" return namegenFemale(nameform)">Generate a Female Name</button>
+				</div>
+			</div>
+			<div class="name">
+				<div class="w3-wide w3-dark-grey w3-padding">Your Dunmer Name is:</div>
+				<div class="nametitle">
+					<h2 class="w3-wide w3-text-dark-grey"></h2>
+				</div>
+				<div id="placeholder">
+					<span class=" w3-text-black" id="name1"></span>
+					<span class=" w3-text-black" id="name2"></span>
+
+
+				</div>
+			</div>
+
+		</div>
+		<div class="w3-container w3-content w3-center " style="max-width:700px" id="description">
+			<p class="w3-justify">The Dunmer, also known as Dark Elves, are the ash-skinned, typically red-eyed elven peoples of Morrowind. They have appeared in every Elder Scroll title to date. You can read more about the Dunmer <a href="en.uesp.net/wiki/Lore:Dunmer">here.</a></p>
+		</div>
+	</div>
+	<footer class="w3-container w3-padding w3-center w3-opacity ">
+		<p>All names and Morrowind logo &copy; Bethesda game studios</p>
+		<p>Generator created by <a href="http://tanvichhabra.com">Tanvi Chhabra</a></p>
+	</footer>
 	<script src="js/main.js">
 
 
