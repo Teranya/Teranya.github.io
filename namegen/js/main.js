@@ -4,11 +4,22 @@ function noenter() {
 //Name generator function
 
 var generatemale = document.getElementById("generatemale");
-var generatfeemale = document.getElementById("generatemale");
+var generatfemale = document.getElementById("generatefemale");
 var form = document.getElementById("nameform");
 
 
 
+function show1() {
+	document.getElementById('buttonmale').style.display = 'block';
+	document.getElementById('buttonfemale').style.display = 'none';
+	document.getElementById('buttondummy').style.display = 'none';
+}
+
+function show2() {
+	document.getElementById('buttonfemale').style.display = 'block';
+	document.getElementById('buttonmale').style.display = 'none';
+	document.getElementById('buttondummy').style.display = 'none';
+}
 
 function namegenMale(form) {
 
