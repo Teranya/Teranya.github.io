@@ -25,16 +25,16 @@ h1 {
 }
 
 #subtitle {
-	max-width: 200px;
+	max-width: 240px;
 }
 
 .ball {
-
+	margin-left: 5%;
 	height: 710px;
 	width: 710px;
 	position: absolute;
 	top: 35%;
-	left: 55%;
+	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	z-index: 10;
@@ -43,6 +43,7 @@ h1 {
 .ballcontainer {
 	display: flex;
 	flex-direction: row;
+
 }
 
 .infocontainer {
