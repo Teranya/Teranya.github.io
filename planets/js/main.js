@@ -21,7 +21,7 @@ function ball() {
 						"Without a doubt",
 						"Yes definitely",
 						"You may rely on it",
-						"As I see it, yes",
+						"As we see it, yes",
 						"Most likely",
 						"Outlook good",
 						"Yes",
@@ -29,11 +29,11 @@ function ball() {
 						"Reply hazy try again",
 						"Ask again later",
 						"Better not tell you now",
-						"Cannot predict now",
+						"We cannot predict now",
 						"Concentrate and ask again",
 						"Do not count on it",
-						"My reply is no",
-						"My sources say no",
+						"Our reply is no",
+						"Our sources say no",
 						"Outlook not so good",
 						"Very doubtful"
 					];
