@@ -16,7 +16,16 @@ body {
 }
 
 h1 {
-	font-size: 20px;
+	font-size: 30px;
+	font-family: 'Poiret One', sans-serif;
+}
+
+#title {
+	max-width: 400px;
+}
+
+#subtitle {
+	max-width: 200px;
 }
 
 .ball {
@@ -38,7 +47,6 @@ h1 {
 
 .infocontainer {
 	font-family: 'Lato', sans-serif;
-	max-width: 400px;
 	display: flex;
 	flex-direction: column;
 	margin-left: 10%;
@@ -74,30 +82,6 @@ h1 {
 	transition: all 1s ease;
 }
 
-/*
-
-#planet2 {
-	max-height: 100%;
-	max-width: 100%;
-	z-index: 4;
-	transition: all 1s ease;
-}
-
-#planet3 {
-	max-height: 100%;
-	max-width: 100%;
-	z-index: 4;
-	transition: all 1s ease;
-}
-
-#planet4 {
-	max-height: 100%;
-	max-width: 100%;
-	z-index: 4;
-	transition: all 1s ease;
-}
-*/
-
 .planetbox {
 	height: 400px;
 	width: 400px;
@@ -118,55 +102,9 @@ h1 {
 	transform: translate(-50%, -50%);
 }
 
-/*
-#planet2box {
-	height: 400px;
-	width: 400px;
-	position: fixed;
-	left: 50%;
-	top: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-
-#planet3box {
-	height: 400px;
-	width: 400px;
-	position: fixed;
-	left: 50%;
-	top: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-
-#planet4box {
-	height: 560px;
-	width: 560px;
-	position: fixed;
-	left: 50%;
-	top: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}*/
-
-#triangle {
-	-webkit-transform: translate(-50%, -50%) rotate(5deg);
-	transform: translate(-50%, -50%) rotate(5deg);
-	position: absolute;
-	width: 0px;
-	height: 0px;
-	left: 50%;
-	top: 60%;
-	border-left: 55px solid transparent;
-	border-right: 55px solid transparent;
-	border-top: 90px solid rgba(60, 10, 120, 0.0);
-	opacity: 0;
-	transition: ease-in all 0.2s;
-}
-
 #textbox {
 	z-index: 100;
-	font-size: 20px;
+	font-size: 30px;
 	text-shadow: 1px 1px 2px rgba(40, 0, 200, 0.8);
 	color: rgba(240, 220, 240, 0.8);
 	text-align: center;
@@ -174,10 +112,10 @@ h1 {
 	-webkit-transform: translate(-50%, -50%) rotate(5deg);
 	transform: translate(-50%, -50%) rotate(5deg);
 	position: absolute;
-	width: 200px;
+	width: 180px;
 	height: 50px;
 	left: 50%;
-	top: 53%;
+	top: 48%;
 	opacity: 0;
 	transition: ease-in all 0.2s;
 }
@@ -186,13 +124,5 @@ h1 {
 	opacity: 1;
 	-webkit-transform: translate(-50%, -50%) rotate(0deg);
 	transform: translate(-50%, -50%) rotate(0deg);
-	transition: ease-in all 0.2s;
-}
-
-.ball:hover #triangle {
-	border-top: 90px solid rgba(60, 10, 120, 0.9);
-	-webkit-transform: translate(-50%, -50%) rotate(0deg);
-	transform: translate(-50%, -50%) rotate(0deg);
-	opacity: 1;
 	transition: ease-in all 0.2s;
 }
